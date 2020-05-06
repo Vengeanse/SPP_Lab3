@@ -1,0 +1,33 @@
+<h2>Todo page</h2>
+{{#if todos.length}}
+	<ul>
+		{{#each	todos}}
+			<li class = "todo">
+				<label>
+					{{#if completed}}
+						<input type="checkbox" checked disabled>
+						<span>Name: "{{title}}", File "{{filename}}" Creation time: {{Date}}</span>
+						<form action="/download" method = "POST">
+							<button class="btn">Save</button>
+							<input type="hidden" name="file" value="{{file}}">
+						</form>
+					{{else}}
+						<input type="checkbox" disabled>
+						<span>Name: "{{title}}", Creation time: {{Date}}</span>
+						<button class="btn" disabled>Save</button>
+					{{/if}}
+				</label>
+			</li>
+		{{/each}}
+	</ul>
+	<form action="/refresh" method = "POST">
+		<button class="btn">Refresh</button>
+	</form>
+	<p class="Notification">All todos will expire in one hour after creation</p>
+{{else}}
+	{{#if isLogin}}
+		<p>No todos!</p>
+	{{else}}
+		<p><a href="/login">Only registered users have access to files!</a></p>
+	{{/if}}
+{{/if}}

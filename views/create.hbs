@@ -1,0 +1,21 @@
+<form action="/create" method = "POST" enctype="multipart/form-data">
+	<h2>Create TODO</h2>
+
+	<p>Todo title:</p>
+	<div class="input-field">
+		<input type="text" name="title">
+	</div>
+	<p>File:</p>
+	<div class="input-field">
+ 		<input type="file" Id = "fileInput" name="Ufile" onchange="FileCheck(this)">
+	</div>
+
+	<button type="submit" class="btn">Create</button>
+</form>
+
+<script src="/FileCheck.js"></script>
+
+
+
+
+

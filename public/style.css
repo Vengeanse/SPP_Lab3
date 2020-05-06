@@ -1,0 +1,60 @@
+.todo {
+	margin-bottom: 1rem;
+}
+
+.todo label {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	background: #f3f3f3;
+	padding: 1rem;
+}
+
+.todo i {
+	z-index: 2;
+}
+
+li button {
+	color: #fff;
+	background: transparent;
+	outline: 0;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: 0px;
+	border: none;
+	border-radius: 2px;
+	display: inline-block;
+} 
+li button:hover {
+	color: #fff;
+	background: transparent;
+	outline: 0;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: 0px;
+	border: none;
+	border-radius: 2px;
+	display: inline-block;
+} 
+li button:active {
+	color: #fff;
+	background: transparent;
+	outline: 0;
+	outline-color: invert;
+	outline-style: none;
+	outline-width: 0px;
+	border: none;
+	border-radius: 2px;
+	display: inline-block;
+} 
+
+.user {
+	background: rgb(65,202,46);
+}
+
+.libut:hover {
+	background: rgb(232,95,76);
+} 
+
